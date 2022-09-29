@@ -1,16 +1,16 @@
 const lists = document.getElementById('lists')
 
-// function strong(list){
-//     let string = getElementsByClassName('list')
-//     document.getElementsByClassName('list').innerHTML = `'<strong>' + ${string} + '</strong>'`;
+function strong(){
+     let input = document.getElementById('input-list')
+     lists.innerHTML += `<div class="list"> <strong> ${input.value} </strong></div>`
     
-// }
+}
 
 // function invio(){
 //     document.getElementById('input-list') = invio
 // }
-function getInputList(eventObject){
-    if (eventObject.key !== 'Enter'){
+function getInputList(event){
+    if (event.key !== 'Enter'){
         return;
     }
   
