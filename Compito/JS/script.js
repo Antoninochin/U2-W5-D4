@@ -1,8 +1,8 @@
 const lists = document.getElementById('lists')
 
 function strong(){
-     let input = document.getElementById('input-list')
-     lists.innerHTML += `<div class="list"> <strong> ${input.value} </strong></div>`
+     let input = document.getElementById('input-list').value
+     lists.innerHTML += `<div class="list"> <strong> ${input} </strong></div>`
     
 }
 
